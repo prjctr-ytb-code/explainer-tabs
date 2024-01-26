@@ -1,0 +1,50 @@
+:root {
+    --active-border-color: #f0da50;
+    --bg-color: #f4f4f4;
+    --text-color: #6d6d6d;
+    --tab-bg-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.tabs {
+    background-color: var(--tab-bg-color);
+}
+
+.tabs__wrapper {
+    list-style: none;
+    display: flex;
+}
+
+.tabs__tab {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.tabs__tab:hover {
+    border-bottom: solid 0.2rem var(--active-border-color);
+}
+
+.tabs__tab_active {
+    border-bottom: solid 0.2rem var(--active-border-color);
+    font-weight: bold;
+}
+
+.tabs__content {
+    padding-block: 5rem;
+    padding-inline: 2rem;
+}
